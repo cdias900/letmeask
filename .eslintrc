@@ -1,0 +1,55 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": [
+      "plugin:react/recommended",
+      "airbnb"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react",
+      "@typescript-eslint"
+    ],
+    "rules": {
+      "react/react-in-jsx-scope": "off",
+      "import/extensions": "off",
+      "react/jsx-filename-extension": [
+        "error",
+        {
+          "extensions": [".tsx"]
+        }
+      ],
+      "react/jsx-props-no-spreading": "off",
+      "import/prefer-default-export": "off",
+      "no-use-before-define": "off",
+      "import/no-extraneous-dependencies": "off",
+      "react/prop-types": "off",
+      "no-console": "off",
+      "no-alert": "off",
+      "camelcase": "off",
+      "jsx-a11y/media-has-caption": "off",
+      "consistent-return": "off",
+      "no-underscore-dangle": "off",
+      "global-require": "off",
+      "react/button-has-type": "off",
+      "react/require-default-props": "off",
+      "no-continue": "off",
+      "no-cond-assign": "off"
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
+    }
+  }
