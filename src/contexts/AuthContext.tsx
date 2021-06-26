@@ -24,9 +24,7 @@ const AuthContextProvider: FC = ({ children }) => {
     if (u) {
       const { displayName, photoURL, uid } = u;
 
-      if (!displayName || !photoURL) {
-        throw new Error('Missing information from Google Account.');
-      }
+      if (!displayName || !photoURL) throw new Error('Missing information from Google Account.');
 
       setUser({
         id: uid,
